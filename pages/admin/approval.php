@@ -53,7 +53,7 @@ $today = date('Y-m-d');
             cursor: pointer; border: 2px solid transparent; text-decoration: none;
             color: var(--muted); background: var(--surface);
         }
-        .tab-btn.active { background: var(--brown); color: white; }
+        .tab-btn.active { background: var(--yellow-200); color: var(--brown-text); }
         .tab-btn .badge-count {
             display:inline-block; background:var(--danger); color:white;
             border-radius:999px; padding:1px 7px; font-size:11px; margin-left:6px;
