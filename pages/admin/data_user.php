@@ -45,12 +45,7 @@ $users = $pdo->query("
                             <tr>
                                 <td><?= $u['id_user'] ?></td>
                                 <td>
-                                    <div style="display:flex; align-items:center; gap:8px;">
-                                        <div class="avatar-circle" style="width:30px; height:30px; font-size:13px;">
-                                            <?= strtoupper(substr($u['nama_user'], 0, 2)) ?>
-                                        </div>
-                                        <?= htmlspecialchars($u['nama_user']) ?>
-                                    </div>
+                                    <?= htmlspecialchars($u['nama_user']) ?>
                                 </td>
                                 <td><?= htmlspecialchars($u['email']) ?></td>
                                 <td><span class="badge badge-<?= $u['role'] ?>"><?= ucfirst($u['role']) ?></span></td>
