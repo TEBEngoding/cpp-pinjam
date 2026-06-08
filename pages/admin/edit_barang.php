@@ -58,9 +58,10 @@ if (!$b) {
                 <div class="form-group">
                     <label>Kondisi</label>
                     <select name="kondisi">
-                        <option value="Baik"  <?= $b['kondisi'] === 'Baik'  ? 'selected' : '' ?>>Baik</option>
-                        <option value="Cukup" <?= $b['kondisi'] === 'Cukup' ? 'selected' : '' ?>>Cukup</option>
-                        <option value="Rusak" <?= $b['kondisi'] === 'Rusak' ? 'selected' : '' ?>>Rusak</option>
+                        <option value="Sangat Baik"  <?= $b['kondisi'] === 'Sangat Baik'  ? 'selected' : '' ?>>Sangat Baik</option>
+                        <option value="Baik" <?= $b['kondisi'] === 'Baik' ? 'selected' : '' ?>>Baik</option>
+                        <option value="Kurang Baik" <?= $b['kondisi'] === 'Kurang Baik' ? 'selected' : '' ?>>Kurang Baik</option>
+                        <option value="Tidak Baik" <?= $b['kondisi'] === 'Tidak Baik' ? 'selected' : '' ?>>Tidak Baik</option>
                     </select>
                 </div>
 

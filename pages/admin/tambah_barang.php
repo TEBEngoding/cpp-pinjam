@@ -43,9 +43,10 @@ require 'sidebar.php';
                 <div class="form-group">
                     <label>Kondisi</label>
                     <select name="kondisi">
+                        <option value="Sangat Baik">Sangat Baik</option>
                         <option value="Baik">Baik</option>
-                        <option value="Cukup">Cukup</option>
-                        <option value="Rusak">Rusak</option>
+                        <option value="Kurang Baik">Kurang Baik</option>
+                        <option value="Tidak Baik">Tidak Baik</option>
                     </select>
                 </div>
 

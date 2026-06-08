@@ -6,15 +6,12 @@ require 'sidebar.php';
 
 $barang_list = $pdo->query("SELECT * FROM barang ORDER BY id_barang ASC")->fetchAll();
 
-// Emoji icon berdasarkan kategori
 function getIcon($kategori) {
     $k = strtolower($kategori ?? '');
-    if (str_contains($k, 'audio') || str_contains($k, 'speaker')) return '🔊';
-    if (str_contains($k, 'foto') || str_contains($k, 'kamera'))   return '📷';
-    if (str_contains($k, 'laptop') || str_contains($k, 'komputer')) return '💻';
-    if (str_contains($k, 'proyektor'))  return '📽️';
-    if (str_contains($k, 'mikrofon'))   return '🎙️';
-    if (str_contains($k, 'lampu'))      return '💡';
+    if (str_contains($k, 'atk'))              return '📝';
+    if (str_contains($k, 'elektronik'))       return '🔌';
+    if (str_contains($k, 'alat kebersihan'))  return '🧹';
+    if (str_contains($k, 'furniture'))        return '🪑';
     return '📦';
 }
 ?>
